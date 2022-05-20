@@ -1,0 +1,46 @@
+{
+    "speakers": [
+        {
+            "title": "Deep Sea Wonder",
+            "name": "Santa Clause",
+            "shortname": "santa_clause",
+            "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, perspiciatis quo! Non aliquam minus error?",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, perspiciatis quo! Non aliquam minus error?",
+            "artwork": [
+                "santa_clause_01_tn.jpg",
+                "santa_clause_02_tn.jpg",
+                "santa_clause_03_tn.jpg",
+                "santa_clause_04_tn.jpg",
+                "santa_clause_05_tn.jpg"
+            ]
+        },
+        {
+            "title": "Art in Full Bloom",
+            "name": "WDJ",
+            "shortname": "wdj",
+            "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, perspiciatis quo! Non aliquam minus error?",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, perspiciatis quo! Non aliquam minus error?",
+            "artwork": [
+                "wdj_01_tn.jpg",
+                "wdj_02_tn.jpg",
+                "wdj_03_tn.jpg",
+                "wdj_04_tn.jpg",
+                "wdj_05_tn.jpg"
+            ]
+        },
+        {
+            "title": "Art of Abstraction",
+            "name": "Willy Wonka",
+            "shortname": "wonka",
+            "summary": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, perspiciatis quo! Non aliquam minus error?",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, perspiciatis quo! Non aliquam minus error?",
+            "artwork": [
+                "wonka_01_tn.jpg",
+                "wonka_02_tn.jpg",
+                "wonka_03_tn.jpg",
+                "wonka_04_tn.jpg",
+                "wonka_05_tn.jpg"
+            ]
+        }
+    ]
+}
