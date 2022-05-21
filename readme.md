@@ -1,0 +1,1 @@
+morgan express bcrypt email-validator express-validator http-errors cookie-parser cookie-session mongoose dot-env express-session connect-mongo

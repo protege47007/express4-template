@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-
+("dot-env").config()
 let debug = require('debug')('advanced-meetups:server');
 let http = require('http');
 const config = require("../server/config")[process.env.NODE_ENV || "development"]
