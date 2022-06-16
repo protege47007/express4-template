@@ -2,8 +2,12 @@ const express = require("express")
 const path = require("path")
 const createError = require("http-errors")
 const cookieSession = require("cookie-session")
-var cookieParser = require('cookie-parser')
-var logger = require('morgan')
+const cookieParser = require('cookie-parser')
+const session = require("expression session")
+const MongoStore = require("connect-mongo")(session)
+const mongoose = require("mongoose")
+const logger = require('morgan')
+const auth = require("./lib/auth")
 
 const FeedbackService = require("./services/feedbackService")
 const SpeakerService = require("./services/speakerService")
@@ -31,6 +35,17 @@ app.use(cookieParser())
 app.use(express.urlencoded({
     extended: true
 }))
+app.use(session({
+    secret: process.env.KEY_1,
+    resave: true,
+    saveUninitialized: false,
+    store: new MongoStore({mongooseConnection: mongoose.connection})
+}))
+app.use(auth.initialize)
+app.use(auth.session)
+app.use(auth.setUser)
+
+
 app.use(express.json())
 app.use(async (req, res, next) => {
     try {
